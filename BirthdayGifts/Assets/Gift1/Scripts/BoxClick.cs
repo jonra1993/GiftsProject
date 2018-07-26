@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BoxClick : MonoBehaviour {
     bool mem = false;
-    GameObject caja;
+    public GameObject caja;
 
     private void OnMouseDown()
     {
@@ -12,7 +12,6 @@ public class BoxClick : MonoBehaviour {
         if (mem==false){
             mem = true;
             Debug.Log("PrintEvent");
-            caja.GetComponent<Animation>().Play();
 
         }
 
